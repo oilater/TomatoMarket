@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- th:fragment 다른 페이지에 포함시킬 영역을 만들어 준다. -->
+	<div th:fragment="header">
+		<nav class="navbar navbar-expand-md navbar-white fixed-top bg-white">
+			<div class="container-fluid">
+				<a class="navbar-brand logo" href="/">토마토마켓</a>
+				<button class="navbar-toggler" type="button"
+					data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+					aria-controls="navbarCollapse" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav me-auto mb-2 mb-md-0">
+						<li class="nav-item"><a class="nav-link active"
+							aria-current="page" href="#">중고거래</a></li>
+					</ul>
+						<form class="d-flex" role="search" th:action="@{/}" method="get">
+							<input name="searchQuery" class="form-control search-bar me-2" type="search"
+								placeholder="물품을 검색해보세요" aria-label="Search"> <a
+								href="/members/deal"><button
+									class="btn btn-outline-success btn_search" type="submit">검색하기</button></a>
+						</form>
+					<a href="/user/mysell"><button
+							class="btn btn-outline-success btn_mysell" type="submit">내
+							물건 팔기</button></a> <a href="/members/mypage"><button
+							class="btn btn-outline-success btn_mytomato" type="submit">나의
+							토마토</button></a> <a href="/members/login"><button
+							class="btn btn-outline-success btn_login"
+							sec:authorize="isAnonymous()" type="submit">로그인</button></a> <a
+						href="/members/logout" sec:authorize="isAuthenticated()"><button
+							class="btn btn-outline-success btn_login"
+							 type="submit">로그아웃</button></a>
+
+
+				</div>
+			</div>
+		</nav>
+	</div>
+</body>
+</html>

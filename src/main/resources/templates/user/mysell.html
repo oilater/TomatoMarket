@@ -1,0 +1,95 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layouts/layout1}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>내 물건 팔기</title>
+</head>
+<body>
+	<div layout:fragment="content">
+		<div class="row featurette">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<div class="mysell-title">
+					<p>내 물건 팔기</p>
+
+				</div>
+				<div class="container deal_con">
+
+					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+						<div class="col-md-4">
+							<div class="card-image">
+								<img
+									src="https://t1.daumcdn.net/cfile/tistory/24283C3858F778CA2E"
+									width="100%" height="250px" alt="인기매물1">
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="card-image">
+								<img
+									src="https://t1.daumcdn.net/cfile/tistory/24283C3858F778CA2E"
+									width="100%" height="250px" alt="인기매물1">
+							</div>
+						</div>
+
+
+						<div class="col-md-4">
+							<div class="card-image">
+								<img
+									src="https://t1.daumcdn.net/cfile/tistory/24283C3858F778CA2E"
+									width="100%" height="250px" alt="인기매물1">
+							</div>
+						</div>
+
+						<div class="filebox">
+							<label for="ex_file">사진 올리기</label> <input type="file"
+								id="ex_file">
+						</div>
+
+					</div>
+				</div>
+				<hr style="color: grey; margin-top: 30px;">
+				<div class="mysell-content-title">
+					<div class="form-floating">
+						<input type="text" class="form-control" id="floatingInput"
+							placeholder="ID"> <label for="floatingInput">제목</label>
+					</div>
+				</div>
+
+				<div class="mysell-content-title">
+					<div class="form-floating">
+						<input type="text" class="form-control" id="floatingInput"
+							placeholder="ID"> <label for="floatingInput">가격
+							(원)</label>
+					</div>
+				</div>
+
+				<div class="form-floating">
+					<div class="mysell-content-title">
+						<textarea class="mysell-textarea form-control" type="text"
+							placeholder="게시글 내용을 작성해주세요. (판매 금지 물품은 게시가 제한될 수 있어요.)"></textarea>
+					</div>
+
+				</div>
+				<div class="mysell-content-title">
+					<div class="form-floating">
+						<input type="text" class="form-control" id="floatingInput"
+							placeholder="ID"> <label for="floatingInput">거래희망
+							장소 및 일시</label>
+					</div>
+				</div>
+				<hr style="color: grey; margin-top: 30px;">
+				<button class="w-20 btn btn-lg btn-primary btn-mysell-back"
+					type="button">수정하기</button>
+				<button class="w-20 btn btn-lg btn-primary btn-mysell-write"
+					type="submit">글 올리기</button>
+
+			</div>
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+</body>
+</html>

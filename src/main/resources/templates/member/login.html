@@ -1,0 +1,87 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layouts/layout1}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>토마토마켓 로그인</title>
+<script type="text/javascript" th:src="@{/js/cookie.js}"></script>
+<!-- 각 페이지의 스크립트가 작성될 위치 -->
+<th:block layout:fragment="script">
+	<script th:inline="javascript">
+		//쿠키를 이용한 아이디 기억
+		$(document).ready(function() {
+			var userInputId = getCookie("userInputId");
+			var setCookieYN = getCookie("setCookieYN");
+
+			if (setCookieYN == 'Y') {
+				$("#id_save").prop("checked", true);
+				$("#email").val(userInputId);
+			} else {
+				$("#id_save").prop("checked", false);
+			}
+
+			//로그인 버튼 클릭
+			$('#loginbtn').click(function() {
+				if ($("#id_save").is(":checked")) {
+					var userInputId = $("#email").val();
+					setCookie("userInputId", userInputId, 60);
+					setCookie("setCookieYN", "Y", 60);
+				} else {
+					deleteCookie("userInputId");
+					deleteCookie("setCookieYN");
+				}
+			});
+		});
+	</script>
+</th:block>
+	<!-- 사용자 CSS 추가 -->
+	<th:block layout:fragment="css">
+		<style>
+.error {
+	color: #bd2130;
+}
+</style>
+	</th:block>
+</head>
+<body class="text-center">
+	<div layout:fragment="content">
+		<div class="col-md-4 login-full-form">
+			<main class="form-signin w-100 m-auto">
+
+
+				<form role="form" action="/members/login" method="post">
+					<img class="logo-image"
+						src="https://cdn-icons-png.flaticon.com/512/4714/4714056.png"
+						alt="토마토" width="100px" height="100px">
+					<h1 class="h3 mb-3 fw-normal login-title">토마토 마켓 로그인</h1>
+
+					<div class="form-floating">
+						<input type="text" name="email" class="form-control" id="email" 
+							placeholder="ID"> <label th:for="email"
+							for="email">이메일(email)</label>
+					</div>
+					<div class="form-floating">
+						<input type="password" name="password" class="form-control" id="password"
+							placeholder="Password"> <label th:for="password"
+							for="password">비밀번호(Password)</label>
+					</div>
+					<p style="margin-top: 20px" th:if="${loginErrorMsg}" class="error"
+						th:text="${loginErrorMsg}"></p>
+					<label><input type="checkbox" name="id_save" id="id_save" />아이디
+						기억하기</label>
+					<button id="loginbtn" class="w-100 btn btn-lg btn-primary login-btn-signin"
+						type="submit">로그인</button>
+					<p class="mt-5 mb-3 text-muted">
+						아직 토마토 회원이 아니신가요? <a onClick="location.href='/members/new'"
+							class="sign-up-link" href="/members/new">회원가입</a>
+					</p>
+					<input type="hidden" th:name="${_csrf.parameterName}"
+						th:value="${_csrf.token}">
+				</form>
+			</main>
+		</div>
+	</div>
+</body>
+</html>

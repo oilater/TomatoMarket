@@ -1,0 +1,469 @@
+@charset "UTF-8";
+
+.logo {
+	margin-left: 270px;
+	color: rgb(224, 90, 42);
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+.nav-item {
+	margin-left: 40px;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.d-flex {
+	margin-right: 50px;
+}
+
+.btn_search {
+	width: 110px;
+	height: 45px;
+	border: 1px solid rgb(173, 173, 173);
+	color: rgb(84, 84, 84);
+}
+
+.form-control {
+	border: none;
+	background-color: rgb(243, 243, 243);
+	color: rgb(196, 196, 196);
+}
+
+.search-bar {
+	width: 450px;
+}
+
+.btn_mysell {
+	margin-left: 40px;
+	width: 120px;
+	height: 45px;
+	border: 1px solid rgb(173, 173, 173);
+	color: rgb(84, 84, 84);
+}
+
+.btn_mytomato {
+	margin-left: 15px;
+	width: 120px;
+	height: 45px;
+	border: 1px solid rgb(173, 173, 173);
+	color: rgb(84, 84, 84);
+}
+
+.btn_login {
+	margin-left: 15px;
+	margin-right: 250px;
+	width: 120px;
+	height: 45px;
+	border: 1px solid rgb(173, 173, 173);
+	color: rgb(84, 84, 84);
+}
+
+.main_row1 {
+	background-color: rgb(255, 250, 240);
+}
+
+.row1_title {
+	margin-top: 270px;
+	margin-left: 370px;
+}
+
+.row1_detail {
+	margin-left: 370px;
+	margin-top: 30px;
+}
+
+.main-img1 {
+	margin-top: 70px;
+	margin-left: -130px;
+}
+
+.main_row2 {
+	background-color: rgb(248, 255, 248);
+}
+
+.main-img2 {
+	margin-top: 30px;
+	margin-left: 330px;
+}
+
+.row2_title {
+	margin-left: 30px;
+	margin-top: 190px;
+}
+
+.row2_detail {
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+.btn_main {
+	margin-top: 20px;
+	margin-left: 30px;
+	width: 150px;
+	height: 50px;
+}
+
+.main_row3 {
+	background-color: rgb(255, 248, 255);
+}
+
+.main_deal_title {
+	margin-top: 120px;
+	text-align: center;
+}
+
+.deal_con {
+	margin-top: 80px;
+}
+
+.btn_view {
+	width: 245px;
+}
+
+.card-link {
+	text-decoration: none;
+	color: black;
+}
+
+.card-detail {
+	margin-top: 15px;
+	font-size: 1.1rem;
+	line-height: 15px;
+}
+
+.main-deal-detail3 {
+	font-size: 1rem;
+}
+
+.main-deal-more {
+	font-size: 1.3rem;
+	text-decoration: underline;
+	color: black;
+}
+
+.main-deal-more-div {
+	margin-top: 50px;
+	text-align: center;
+	margin-bottom: 200px;
+}
+
+/* footer css */
+.main_row4 {
+	position: relative;
+	bottom: 0;
+	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 100px;
+	background-color: white;
+}
+
+.footer-text {
+	color: rgb(172, 172, 172);
+}
+
+.light {
+	color: rgb(229, 229, 229);
+}
+
+#wrapper {
+	height: auto;
+	min-height: 100%;
+	padding-bottom: 192px;
+}
+
+footer {
+	height: 192px;
+	position: relative;
+	transform: translateY(-100%);
+}
+
+/* 로그인 화면 */
+.logo-image {
+	margin-top: 120px;
+}
+
+.sign-up-link {
+	text-decoration: underline;
+	color: grey;
+}
+
+.login-full-form {
+	margin: 0 auto;
+}
+
+.login-title {
+	margin-top: 50px;
+}
+
+.form-floating {
+	margin-top: 30px;
+}
+
+.login-btn-signin {
+	margin-top: 30px;
+	background-color: rgb(255, 135, 65);
+	border: none;
+	height: 55px;
+}
+
+/* 회원가입 화면 */
+.control-address {
+	margin-top: 30px;
+}
+
+.select-control {
+	height: 55px;
+	color: rgb(48, 48, 48);
+}
+
+.signup-id {
+	width: 400px;
+}
+
+.btn-signup-jungbok {
+	background-color: rgb(255, 152, 100);
+	border: none;
+}
+
+/* 마이페이지 */
+.mypage-form {
+	margin-top: 100px;
+	width: 70%;
+	height: 110px;
+}
+
+.mypage-btn {
+	background-color: white;
+	border: 2px solid rgb(255, 104, 49);
+	height: 60px;
+	color: black;
+}
+
+.mypage-btn2 {
+	background-color: rgb(255, 144, 110);
+	border: none;
+	width: 90px;
+	height: 50px;
+	float: right;
+	margin-right: 20px;
+	margin-top: 13px;
+	border-radius: 0.5rem;
+}
+
+.mypage-myinfo {
+	background-color: rgb(255, 255, 255);
+	border: 2px solid rgb(255, 104, 49);
+	height: 80px;
+	border-radius: 1em;
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.mypage-mynickname {
+	line-height: 80px;
+	text-align: left;
+	margin-left: 30px;
+	font-size: 1.3rem;
+	position: absolute;
+}
+
+.mypage-footer {
+	margin-top: 400px;
+}
+
+.blank {
+	height: 30px;
+}
+
+.btn-app {
+	text-decoration: none;
+	color: black;
+}
+/* 중고거래 매물보기 */
+.deal-page {
+	margin-bottom: 100px;
+}
+
+.deal-row {
+	background-color: rgb(255, 255, 255);
+}
+
+.deal_row2 {
+	background-color: rgb(246, 246, 246);
+}
+
+.deal-morelook {
+	margin-top: 100px;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.deal-morelook-title {
+	font-size: 2.3rem;
+}
+
+.deal-morelook-detail {
+	margin-top: 50px;
+	font-size: 1.2rem;
+}
+
+.btn-deal-android {
+	width: 170px;
+	height: 60px;
+	background-color: rgb(255, 156, 34);
+	border: none;
+	margin-left: 710px;
+	margin-top: -100px;
+}
+
+.btn-deal-ios {
+	width: 170px;
+	height: 60px;
+	background-color: rgb(255, 156, 34);
+	border: none;
+	margin-left: 20px;
+	margin-top: -100px;
+}
+
+.btn-deal {
+	margin-bottom: 100px;
+}
+
+/* 제품 상세보기 */
+.carousel-inner {
+	margin-top: 100px;
+	text-align: center;
+	border-radius: 20px;
+}
+
+.d-block {
+	width: 100%;
+	height: 600px;
+	object-fit: fill;
+}
+
+.detail-user-info {
+	margin-top: 20px;
+	margin-left: 5px;
+	font-size: 1.2rem;
+	margin-bottom: 40px;
+}
+
+.detail-userAddress {
+	font-size: 1rem;
+}
+
+.btn-detail-buy {
+	float: right;
+	background-color: rgb(255, 117, 67);
+	width: 130px;
+	border: none;
+	margin-top: -20px;
+}
+
+.detail-price {
+	margin-top: 20px;
+}
+
+.detail-contentbox {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.countView {
+	color: rgb(161, 161, 161);
+}
+
+.detail-below-img {
+	border-radius: 20px;
+}
+
+img {
+	border-radius: 8px;
+}
+
+.detail-goods-title {
+	font-size: 1.2rem;
+	display: inline-block;
+	margin-top: 30px;
+}
+
+.detail-moreView {
+	text-decoration: none;
+	float: right;
+	color: rgb(255, 111, 0);
+	margin-top: 30px;
+}
+
+/* 내 물건 팔기 */
+.mysell-title {
+	margin-top: 170px;
+	font-size: 2rem;
+	text-align: center;
+	color: rgb(255, 132, 0);
+}
+
+.mysell-content-title {
+	color: rgb(167, 167, 167);
+	background-color: white;
+}
+
+.mysell-input {
+	border: none;
+	width: 100%;
+	height: 60px;
+	font-size: 1.2rem;
+}
+
+.mysell-textarea {
+	border: none;
+	font-size: 1rem;
+	width: 100%;
+	height: 400px;
+	margin-top: 20px;
+}
+
+.btn-mysell-back {
+	margin-left: 320px;
+	background-color: white;
+	color: rgb(255, 133, 46);
+	border: 1px solid rgb(255, 145, 34);
+}
+
+.btn-mysell-write {
+	margin-left: 10px;
+	background-color: rgb(255, 136, 32);
+	border: none;
+}
+
+.filebox label {
+	display: inline-block;
+	padding: .5em .75em;
+	color: #999;
+	font-size: inherit;
+	vertical-align: middle;
+	background-color: #ff8d3b;
+	color: white;
+	cursor: pointer;
+	border: none;
+	border-bottom-color: #e2e2e2;
+	border-radius: 8px;
+	margin-top: 10px;
+	margin-left: 800px;
+	width: 120px;
+	height: 45px;
+	text-align: center;
+	line-height: 30px;
+}
+
+.filebox input[type="file"] { /* 파일 필드 숨기기 */
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}

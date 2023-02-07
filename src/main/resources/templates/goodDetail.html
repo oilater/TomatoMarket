@@ -1,0 +1,194 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layouts/layout1}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>상품 상세보기</title>
+</head>
+<body>
+	<div layout:fragment="content">
+		<!-- row 시작 -->
+		<div class="row featurette">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<div id="carouselExampleFade" class="carousel slide carousel-fade">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img
+								src="https://windowsforum.kr/files/attach/images/2966154/524/307/004/77a5d80cefb4d1dbd20e9173736dad3b.jpg"
+								class="d-block" alt="사진1">
+						</div>
+						<div class="carousel-item">
+							<img
+								src="https://mblogthumb-phinf.pstatic.net/20111213_134/828wlsdud_1323758304687jlqvc_JPEG/%C7%B3%B0%E6%B9%E8%B0%E6%C8%AD%B8%E9_%BD%BA%B8%B6%C6%AE%C6%F9.jpg?type=w2"
+								class="d-block" alt="사진2">
+						</div>
+						<div class="carousel-item">
+							<img
+								src="https://mblogthumb-phinf.pstatic.net/20111213_58/828wlsdud_1323758313693KECRr_JPEG/%C7%B3%B0%E6%B9%E8%B0%E6%C8%AD%B8%E9_%BD%BA%B8%B6%C6%AE%C6%F9_00002.jpg?type=w2"
+								class="d-block" alt="사진3">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button"
+						data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button"
+						data-bs-target="#carouselExampleFade" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3"></div>
+		<div class="row featurette">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<div class="detail-user-info">
+					<span class="detail-userId"><strong>oilater</strong> <br>
+						<span class="detail-userAddress">서울시 강남구 일원동</span></span>
+					<button class="btn btn-lg btn-primary btn-detail-buy" type="submit">구매하기</button>
+					<hr style="color: grey;">
+				</div>
+
+				<div class="detail-titlebox">
+					<h1 style="font-size: 1.3rem;">서랍장 팝니다</h1>
+					<h2 class="detail-price" style="font-size: 1.2rem;">
+						<strong>15,000원</strong>
+					</h2>
+				</div>
+
+				<div class="detail-contentbox">
+					<span style="font-size: 1.1rem;">3년 정도 사용했고<br>크기는 <br>
+						너비 120mm x 깊이 51mm x 높이 85mm <br> 입니다. <br> 이사 일정 때문에
+						빠르게 가져가시는 분께 드리겠습니다.
+					</span>
+				</div>
+				<div class="countView">조회 123</div>
+				<hr style="color: grey;">
+
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+		<!-- 중고거래 인기 매물 -->
+		<div class="row featurette">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<span class="featurette-heading fw-normal lh-1 detail-goods-title">토마토마켓
+					인기중고 </span> <span><a href="#" class="detail-moreView">더 구경하기</a></span>
+
+				<div class="container deal_con">
+
+					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+						<div class="col-md-4">
+							<a href="#" class="card-link">
+								<div class="card-image">
+									<img
+										src="https://t1.daumcdn.net/cfile/tistory/24283C3858F778CA2E"
+										width="100%" height="250px" alt="인기매물1">
+								</div>
+								<div class="card-detail">
+									<p>스팸</p>
+									<p>
+										<strong>1,000원</strong>
+									</p>
+									<p class="main-deal-detail3">서울시 노원구 공릉 2동</p>
+								</div>
+							</a>
+						</div>
+
+
+						<div class="col-md-4">
+							<a href="#" class="card-link">
+								<div class="card-image">
+									<img
+										src="https://t1.daumcdn.net/cfile/tistory/24283C3858F778CA2E"
+										width="100%" height="250px" alt="인기매물1">
+								</div>
+								<div class="card-detail">
+									<p>레드향</p>
+									<p>
+										<strong>10,000원</strong>
+									</p>
+									<p class="main-deal-detail3">인천 연수구 송도동</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-4">
+							<a href="#" class="card-link">
+								<div class="card-image">
+									<img
+										src="https://t1.daumcdn.net/cfile/tistory/24283C3858F778CA2E"
+										width="100%" height="250px" alt="인기매물1">
+								</div>
+								<div class="card-detail">
+									<p>아이폰 13 프로맥스 팖</p>
+									<p>
+										<strong>500,000원</strong>
+									</p>
+									<p class="main-deal-detail3">충남 천안시 서북구 성성동</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-4">
+							<a href="#" class="card-link">
+								<div class="card-image">
+									<img
+										src="https://t1.daumcdn.net/cfile/tistory/24283C3858F778CA2E"
+										width="100%" height="250px" alt="인기매물1">
+								</div>
+								<div class="card-detail">
+									<p>아이폰 13 프로맥스 팖</p>
+									<p>
+										<strong>500,000원</strong>
+									</p>
+									<p class="main-deal-detail3">충남 천안시 서북구 성성동</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-4">
+							<a href="#" class="card-link">
+								<div class="card-image">
+									<img
+										src="https://t1.daumcdn.net/cfile/tistory/24283C3858F778CA2E"
+										width="100%" height="250px" alt="인기매물1">
+								</div>
+								<div class="card-detail">
+									<p>아이폰 13 프로맥스 팖</p>
+									<p>
+										<strong>500,000원</strong>
+									</p>
+									<p class="main-deal-detail3">충남 천안시 서북구 성성동</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-4">
+							<a href="#" class="card-link">
+								<div class="card-image">
+									<img
+										src="https://t1.daumcdn.net/cfile/tistory/24283C3858F778CA2E"
+										width="100%" height="250px" alt="인기매물1">
+								</div>
+								<div class="card-detail">
+									<p>아이폰 13 프로맥스 팖</p>
+									<p>
+										<strong>500,000원</strong>
+									</p>
+									<p class="main-deal-detail3">충남 천안시 서북구 성성동</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<hr style="color: grey;">
+					<div class="col-md-2"></div>
+				</div>
+			</div>
+</body>
+</html>

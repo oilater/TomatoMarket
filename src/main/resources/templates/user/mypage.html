@@ -1,0 +1,40 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layouts/layout1}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>마이 토마토</title>
+</head>
+<body class="text-center">
+	<div layout:fragment="content">
+		<div class="row featurette mypage-background">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<div class="d-grid gap-2 col-6 mx-auto mypage-form">
+					<h4 style="text-align: left;">나의 정보</h4>
+					<div class="mypage-myinfo">
+						<div class="mypage-mynickname">
+							<span>나의 닉네임</span>
+						</div>
+
+						<button class="btn btn-primary mypage-btn2" type="button">수정하기</button>
+					</div>
+
+					<h4 style="text-align: left;">나의 거래</h4>
+					<button class="btn btn-primary mypage-btn" type="button">판매내역</button>
+					<button class="btn btn-primary mypage-btn" type="button">구매내역</button>
+					<div class="blank"></div>
+					<h4 style="text-align: left;">스마트 토마토</h4>
+					<button class="btn btn-primary mypage-btn" type="button"><a class="btn-app" href="https://play.google.com/store/apps/details?id=com.towneers.www&pli=1">안드로이드
+						앱 설치</a></button>
+					<button class="btn btn-primary mypage-btn" type="button"><a class="btn-app" href="https://apps.apple.com/kr/app/pangyojangteo/id1018769995?l=ko&ls=1">IOS
+						앱 설치</a></button>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+</body>
+</html>

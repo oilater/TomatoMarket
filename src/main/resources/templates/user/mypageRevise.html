@@ -1,0 +1,65 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layouts/layout1}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>토마토마켓 회원가입</title>
+</head>
+<body class="text-center">
+	<div layout:fragment="content">
+		<div class="col-md-4"></div>
+		<div class="col-md-4 login-full-form">
+			<main class="form-signin w-100 m-auto">
+
+
+				<form>
+					<img class="logo-image"
+						src="https://cdn-icons-png.flaticon.com/512/4714/4714056.png"
+						alt="토마토" width="100px" height="100px">
+					<h1 class="h3 mb-3 fw-normal login-title">토마토 마켓 회원가입</h1>
+
+					<div class="form-floating">
+						<input type="text" class="form-control" id="floatingInput"
+							placeholder="ID"> <label for="floatingInput">아이디(ID)</label>
+						<button class="w-100 btn btn-lg btn-primary btn-signup-jungbok"
+							type="submit">중복확인</button>
+					</div>
+					<div class="form-floating">
+						<input type="password" class="form-control" id="floatingPassword"
+							placeholder="Password"> <label for="floatingPassword">비밀번호(Password)</label>
+					</div>
+					<div class="form-floating">
+						<input type="text" class="form-control" id="floatingInput"
+							placeholder="ID"> <label for="floatingInput">닉네임</label>
+					</div>
+					<div class="form-floating">
+						<input type="text" class="form-control" id="floatingInput"
+							placeholder="ID"> <label for="floatingInput">이름</label>
+					</div>
+					<select class="form-floating form-control select-control"
+						placeholder="Sex">
+						<option value="Sex">성별을 선택주세요.</option>
+						<option value="male">남자</option>
+						<option value="female">여자</option>
+						<label for="floatingInput">성별</label>
+					</select>
+					<div class="form-floating">
+						<input type="text" class="form-control control-address"
+							id="floatingInput" placeholder="주소"> <label
+							for="floatingInput">주소</label>
+					</div>
+					<div class="form-floating">
+						<input type="text" class="form-control" id="floatingInput"
+							placeholder="전화번호"> <label for="floatingInput">전화번호</label>
+					</div>
+
+					<button class="w-100 btn btn-lg btn-primary login-btn-signin"
+						type="submit">수정하기</button>
+				</form>
+			</main>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layouts/layout1}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>토마토마켓 회원가입</title>
+<th:block layout:fragment="script">
+	<script th:inline="javascript">
+	//회원가입이 실패했을떄
+	$(document).ready(function()){
+		var errorMessage = [[${errorMessage}]];
+		if(errorMessage != null) {
+			alert(errorMessage);
+		}
+	};
+	</script>
+	<th:block layout:fragment="css">
+		<style>
+.fieldError {
+	color: #bd2130;
+}
+</style>
+	</th:block>
+</head>
+<body class="text-center">
+	<div layout:fragment="content">
+		<div class="col-md-4"></div>
+		<div class="col-md-4 login-full-form">
+			<main class="form-signin w-100 m-auto">
+				<form role="form" action="/members/new" method="post"
+					th:object="${signUpDto}">
+					<img class="logo-image"
+						src="https://cdn-icons-png.flaticon.com/512/4714/4714056.png"
+						alt="토마토" width="100px" height="100px">
+					<h1 class="h3 mb-3 fw-normal login-title">토마토 마켓 회원가입</h1>
+
+					<div class="form-floating">
+						<input type="email" name="email" th:field="*{email}" class="form-control"
+							id="floatingInput" placeholder="Email"> <label
+							th:for="email" for="email">이메일</label>
+						<p th:if="${#fields.hasErrors('email')}" th:errors="*{email}"
+							class="fieldError">Incorrect Data</p>
+					</div>
+					<div class="form-floating">
+						<input type="password" name="password" th:field="*{password}" class="form-control"
+							id="password" placeholder="Password"> <label
+							th:for="password" for="password">비밀번호(Password)</label>
+						<p th:if="${#fields.hasErrors('password')}"
+							th:errors="*{password}" class="fieldError">Incorrect Data</p>
+					</div>
+					<div class="form-floating">
+						<input type="text" name="nickname" th:field="*{nickname}" class="form-control"
+							id="nickname" placeholder="닉네임"> <label
+							th:for="nickname" for="nickname">닉네임</label>
+						<p th:if="${#fields.hasErrors('nickname')}"
+							th:errors="*{nickname}" class="fieldError">Incorrect Data</p>
+					</div>
+					<div class="form-floating">
+						<input type="text" name="name" th:field="*{name}" class="form-control"
+							id="name" placeholder="ID"> <label th:for="name"
+							for="name">이름</label>
+						<p th:if="${#fields.hasErrors('name')}" th:errors="*{name}"
+							class="fieldError">Incorrect Data</p>
+					</div>
+					<div class="form-floating">
+						<input type="text" name="address" th:field="*{address}"
+							class="form-control control-address" id="address"
+							placeholder="주소(동까지 입력해주세요)"> <label th:for="address"
+							for="address">주소<span style="font-size: 0.9rem;">
+								(동까지 입력해주세요)</span></label>
+						<p th:if="${#fields.hasErrors('address')}" th:errors="*{address}"
+							class="fieldError">Incorrect Data</p>
+					</div>
+					<div class="form-floating">
+						<input type="text" name="tel" th:field="*{tel}" class="form-control"
+							id="tel" placeholder="전화번호"> <label
+							th:for="tel" for="tel">전화번호</label>
+						<p th:if="${#fields.hasErrors('tel')}" th:errors="*{tel}"
+							class="fieldError">Incorrect Data</p>
+					</div>
+
+					<button class="w-100 btn btn-lg btn-primary login-btn-signin"
+						type="submit">가입하기</button>
+					<input type="hidden" th:name="${_csrf.parameterName}"
+						th:value="${_csrf.token}">
+				</form>
+			</main>
+		</div>
+	</div>
+</body>
+</html>
